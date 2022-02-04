@@ -1,4 +1,4 @@
-abstract class HealthService{
+abstract class HealthService {
   bool getHealth();
 }
 

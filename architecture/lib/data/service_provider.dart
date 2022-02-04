@@ -1,4 +1,4 @@
-import 'package:architecture_data/services.dart';
+import 'package:architecture/data/services.dart';
 import 'package:get_it/get_it.dart';
 
 class ServiceProvider {
@@ -8,9 +8,9 @@ class ServiceProvider {
 
   static final instance = ServiceProvider();
 
-  void initialize(){
+  void initialize() {
     _getIt.registerLazySingleton<HealthService>(
-    () => DummyService(),
+      () => DummyService(),
     );
   }
 }
